@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandyPro Services USA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Экран загрузки (Preloader) -->
+    <div id="preloader">
+        <div class="loader-logo">HandyPro<span>USA</span></div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="logo">HandyPro<span>USA</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="cta-btn sm-hide" onclick="document.getElementById('booking').scrollIntoView();">Get Free Estimate</button>
+        <!-- Бургер-меню для мобильных -->
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Главный экран -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Trusted Handyman Services Across the USA</h1>
+            <p>Fast, reliable, and affordable home repair services. We fix it right the first time.</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn-primary">Book Now</a>
+                <a href="#services" class="btn-secondary">View Services</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Статистика -->
+    <section class="stats reveal">
+        <div class="stat-item">
+            <h3 class="counter" data-target="10000">0</h3>
+            <p>Jobs Completed</p>
+        </div>
+        <div class="stat-item">
+            <h3>4.9 <i class="fas fa-star" style="color: #f97316;"></i></h3>
+            <p>Customer Rating</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Support Available</p>
+        </div>
+    </section>
+
+    <!-- Услуги (Карусель) -->
+    <section id="services" class="services">
+        <div class="section-header reveal">
+            <h2>Our Premium Services</h2>
+            <p>Swipe or click the arrows to explore our full range of solutions.</p>
+        </div>
+        
+        <div class="carousel-wrapper reveal-right">
+            <button class="carousel-btn left-btn" id="slide-left"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="service-carousel" id="service-carousel">
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Electrical Services</h3>
+                    <p>Wiring repair, ceiling fan installation, and smart home setup.</p>
+                    <div class="card-details"><span>Starts at $89</span><span>~ 2 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-sink"></i></div>
+                    <h3>Plumbing Services</h3>
+                    <p>Leak repairs, drain cleaning, water heaters, and pipe installation.</p>
+                    <div class="card-details"><span>Starts at $95</span><span>~ 1.5 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-hammer"></i></div>
+                    <h3>General Home Repair</h3>
+                    <p>Door repair, TV mounting, furniture assembly, and flooring repair.</p>
+                    <div class="card-details"><span>Starts at $75</span><span>~ 1 Hour</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-broom"></i></div>
+                    <h3>Cleaning Services</h3>
+                    <p>Deep cleaning, carpet cleaning, window washing, and move-out cleaning.</p>
+                    <div class="card-details"><span>Starts at $120</span><span>~ 3 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Outdoor Services</h3>
+                    <p>Lawn care, fence repair, pressure washing & snow removal.</p>
+                    <div class="card-details"><span>Starts at $80</span><span>~ 2 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Painting & Drywall</h3>
+                    <p>Interior/exterior painting, drywall patching, and wall texturing.</p>
+                    <div class="card-details"><span>Starts at $150</span><span>~ 4 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-fan"></i></div>
+                    <h3>HVAC Maintenance</h3>
+                    <p>AC repair, furnace filter replacement, and duct cleaning.</p>
+                    <div class="card-details"><span>Starts at $110</span><span>~ 2 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="card-icon"><i class="fas fa-ruler-combined"></i></div>
+                    <h3>Carpentry Services</h3>
+                    <p>Custom shelving, trim installation, and cabinet repairs.</p>
+                    <div class="card-details"><span>Starts at $130</span><span>~ 3 Hours</span></div>
+                    <button class="btn-outline">Book Service</button>
+                </div>
+            </div>
+
+            <button class="carousel-btn right-btn" id="slide-right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Бронирование -->
+    <!-- Бронирование -->
+    <section id="booking" class="booking-section">
+        <div class="booking-container glass-panel reveal">
+            <h2>Book an Appointment</h2>
+            
+            <!-- ФОРМА ОТПРАВКИ (Web3Forms) -->
+            <form id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+                
+                <!-- ВАШ КЛЮЧ ДОСТУПА -->
+                <input type="hidden" name="access_key" value="718a9a7e-3ba3-4582-a900-79d13087b41b">
+                <!-- Тема письма -->
+                <input type="hidden" name="subject" value="New Service Request from HandyPro">
+
+                <div class="form-row">
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    
+                    
+                    <div class="input-wrapper">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="datetime-local" name="date" required>
+                    </div>
+                   
+                </div>
+                  <div class="input-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" name="address" placeholder="Address" required>
+                    </div>
+                    
+                <div class="form-row">
+                    <!-- ДОБАВИТЬ ЭТОТ БЛОК (Выбор услуги) -->
+                    <div class="input-wrapper">
+                        <i class="fas fa-tools"></i>
+                        <select name="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="Electrical Services">Electrical Services</option>
+                            <option value="Plumbing Services">Plumbing Services</option>
+                            <option value="General Home Repair">General Home Repair</option>
+                            <option value="Cleaning Services">Cleaning Services</option>
+                            <option value="Outdoor Services">Outdoor Services</option>
+                            <option value="Painting & Drywall">Painting & Drywall</option>
+                            <option value="HVAC Maintenance">HVAC Maintenance</option>
+                            <option value="Carpentry Services">Carpentry Services</option>
+                        </select>
+                    </div>
+
+                    <!-- ... ваше поле с датой ... -->
+                    
+                </div>
+
+                <textarea name="message" placeholder="How can we help? Or describe your issue..." rows="4" required></textarea>
+                
+                <label class="custom-checkbox">
+                    <input type="checkbox" name="emergency" value="YES - Urgent!">
+                    <span class="checkmark"><i class="fas fa-check"></i></span>
+                    <span class="checkbox-text">This is an emergency (Requires immediate attention)</span>
+                </label>
+                
+                <button type="submit" class="btn-primary full-width">Send Request</button>
+            </form>
+        </div>
+    </section>
+<!-- Всплывающее меню после оплаты/отправки -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Request Submitted Successfully!</h3>
+            <p>Thank you for choosing HandyPro USA. Your service request has been securely forwarded to our team.</p>
+            
+            <div class="modal-details">
+                <p><i class="fas fa-info-circle" style="color: var(--accent-orange); margin-right: 8px;"></i> <strong>Next Steps:</strong> Our manager will contact you within 15 minutes to confirm the appointment details and provide the final payment link.</p>
+            </div>
+            
+            <div class="modal-actions">
+                <a href="#services" class="btn-primary" id="btn-explore">Explore More Services</a>
+                <button id="close-modal" class="btn-secondary">Return to Home</button>
+            </div>
+        </div>
+    </div>
+    <!-- Красивое модальное окно успешной отправки -->
+    <div id="success-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Request Submitted!</h3>
+            <p>Thank you for choosing HandyPro USA. Your service request has been securely forwarded to our team.</p>
+            <button id="close-modal" class="btn-primary full-width">Awesome, thanks!</button>
+        </div>
+    </div>
+    <!-- Подвал -->
+    <!-- Обновленный Подвал сайта -->
+     <!-- Модальное окно для Privacy Policy и Terms -->
+    <div id="legal-modal" class="modal-overlay">
+        <div class="modal-content glass-panel">
+            <!-- Используем оранжевый цвет и иконку щита -->
+            <div class="modal-icon" style="color: var(--accent-orange); animation: none; transform: translateY(-10px);">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3 id="legal-modal-title">Document</h3>
+            <p>This document is currently being updated by our legal team to ensure compliance with the latest regulations. Please check back soon!</p>
+            <button id="close-legal-modal" class="btn-primary full-width">Understood</button>
+        </div>
+    </div>
+    <footer id="contact" class="site-footer">
+        <div class="footer-top">
+            <div class="logo">HandyPro<span>USA</span></div>
+            <div class="footer-contact">
+                <a href="mailto:kolesnikovdenis707@gmail.com"><i class="fas fa-envelope"></i> kolesnikovdenis707@gmail.com</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2026 HandyPro Services USA. All rights reserved.
+            </div>
+           <div class="legal-links">
+                <!-- Заменили href="#", теперь страница останется на месте -->
+                <a href="javascript:void(0);" onclick="showLegal('Privacy Policy');">Privacy Policy</a>
+                <span class="separator">|</span>
+                <a href="javascript:void(0);" onclick="showLegal('Terms of Service');">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+</body>
+</html>
